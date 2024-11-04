@@ -58,8 +58,8 @@ main{
 }
 
 .avator{
-    width: 4.875rem;
-    height: 4.875rem;
+    max-width: 4.875rem;
+    max-height: 4.875rem;
     margin-bottom: 2.6875rem;
     background-color: #D8D8D8;
     border-radius: 100%;
@@ -206,3 +206,21 @@ main{
     font-size: 0.9375rem;
 }
 /* card */
+
+/* 手機 */
+@media  screen and (max-width: 767px) {
+    
+}
+
+/* 平板 */
+@media (min-width: 768px) and (max-width: 1024px) {
+    body{
+        /* align-items:stretch; */
+        justify-content:start;
+    }
+
+    .person{
+        padding-right: 5.25rem;
+    }
+    
+}
