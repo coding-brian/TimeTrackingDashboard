@@ -41,11 +41,11 @@ main{
     border-radius: 0.9375rem;
 }
 
-.information .time-line{
+.information .time-line span{
     cursor: pointer;
 }
 
-.information .time-line.active{
+.information .time-line span.active{
     color: white;
 }
 
