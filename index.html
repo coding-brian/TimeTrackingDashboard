@@ -12,7 +12,7 @@
       href="./images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="./style/index.css" />
-    <script src="./js/" defer></script>
+    <script src="./js/index.js" defer type="module"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,24 +22,40 @@
     <title>Frontend Mentor | Time tracking dashboard</title>
   </head>
   <body>
-    <!-- Report for Jeremy Robson Daily Weekly Monthly -->
-
-    <div class="card">
-      <div class="card-background">
-        <img src="./images/icon-work.svg" alt="" />
-      </div>
-      <div class="card-item">
-        <div class="card-item-container">
-          <div class="title">
-            <span>Work</span>
-            <img src="./images/icon-ellipsis.svg" class="ellipsis"/>
+    <main>
+      <div class="information">
+        <div class="person">
+          <div class="avator">
+            <img src="./images/image-jeremy.png" alt="" class="avator-img" />
           </div>
-          <div class="content">
-            <span class="total-time"> 32hrs </span>
-            <span class="total-last-time"> Previous - 7hrs </span>
+          <span class="tilte">Report for</span>
+          <span class="first-name">Jeremy</span>
+          <span class="last-name">Robson</span>
+        </div>
+        <div class="time">
+          <div class="time-line">
+            <span id="daily">Daily</span>
+            <span id="weekly">Weekly</span>
+            <span id="monthly">Monthly</span>
           </div>
         </div>
       </div>
-    </div>
+      <!-- <div class="card">
+        <div class="card-background">
+          <img src="./images/icon-work.svg" alt="" />
+        </div>
+        <div class="card-item">
+          <div class="card-item-container">
+            <div class="title">
+              <span>Work</span>
+              <img src="./images/icon-ellipsis.svg" class="ellipsis" />
+            </div>
+            <div class="content">
+              <span class="total-time"> 32hrs </span>
+              <span class="total-last-time"> Previous - 7hrs </span>
+            </div>
+          </div>
+        </div>-->
+    </main>
   </body>
 </html>
