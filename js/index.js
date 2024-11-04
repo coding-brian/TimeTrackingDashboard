@@ -81,7 +81,7 @@ const generateCardItem=(item)=>{
             break;
     }
 
-    totalLastTimeSpan.innerText=period+" - "+item.hour.previous+"hrs"
+    totalLastTimeSpan.innerText="Last "+period+" - "+item.hour.previous+"hrs"
     content.appendChild(totalLastTimeSpan)
     cartItemContainer.appendChild(content)
     
@@ -101,7 +101,7 @@ const clear=()=>{
         card.remove();
     });
 
-    const periods=document.body.querySelector('main').querySelector('.time-line').querySelectorAll('span')
+    const periods=document.body.querySelector('main').querySelector('.time').querySelectorAll('span')
     periods.forEach(period => {
         period.classList.remove('active')        
     });
